@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículos - Dialectica Educativa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+        }
+
+        .article-card, .card:hover {
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .article-card .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .article-card .card-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        @media (max-width: 767px) {
+            .card-img-top {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dialectica Educativa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Artículos -->
+    <section id="articulos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Artículos Científicos</h2>
+            <div class="row">
+                <!-- Artículos en tarjetas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Einstein" class="card-img-top" alt="Albert Einstein">
+                        <div class="card-body">
+                            <h5 class="card-title">Albert Einstein</h5>
+                            <p class="card-text">Descubre la teoría de la relatividad y su impacto en la física moderna.</p>
+                            <a href="https://es.wikipedia.org/wiki/Albert_Einstein" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Marie+Curie" class="card-img-top" alt="Marie Curie">
+                        <div class="card-body">
+                            <h5 class="card-title">Marie Curie</h5>
+                            <p class="card-text">Conoce los descubrimientos sobre la radiactividad y su legado.</p>
+                            <a href="https://es.wikipedia.org/wiki/Marie_Curie" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Isaac+Newton" class="card-img-top" alt="Isaac Newton">
+                        <div class="card-body">
+                            <h5 class="card-title">Isaac Newton</h5>
+                            <p class="card-text">Explora las leyes del movimiento y su influencia en la ciencia.</p>
+                            <a href="https://es.wikipedia.org/wiki/Isaac_Newton" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Galileo+Galilei" class="card-img-top" alt="Galileo Galilei">
+                        <div class="card-body">
+                            <h5 class="card-title">Galileo Galilei</h5>
+                            <p class="card-text">Revolucionó la astronomía con sus observaciones del cielo y la teoría heliocéntrica.</p>
+                            <a href="https://es.wikipedia.org/wiki/Galileo_Galilei" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Charles+Darwin" class="card-img-top" alt="Charles Darwin">
+                        <div class="card-body">
+                            <h5 class="card-title">Charles Darwin</h5>
+                            <p class="card-text">Descubre su teoría de la evolución a través de la selección natural.</p>
+                            <a href="https://es.wikipedia.org/wiki/Charles_Darwin" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Nikola+Tesla" class="card-img-top" alt="Nikola Tesla">
+                        <div class="card-body">
+                            <h5 class="card-title">Nikola Tesla</h5>
+                            <p class="card-text">Pionero en la transmisión de energía eléctrica y desarrollo de la corriente alterna.</p>
+                            <a href="https://es.wikipedia.org/wiki/Nikola_Tesla" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Rosalind+Franklin" class="card-img-top" alt="Rosalind Franklin">
+                        <div class="card-body">
+                            <h5 class="card-title">Rosalind Franklin</h5>
+                            <p class="card-text">Descubre su importante contribución en la identificación de la estructura del ADN.</p>
+                            <a href="https://es.wikipedia.org/wiki/Rosalind_Franklin" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más artículos -->
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Alan+Turing" class="card-img-top" alt="Alan Turing">
+                        <div class="card-body">
+                            <h5 class="card-title">Alan Turing</h5>
+                            <p class="card-text">Padre de la computación moderna y de la teoría de la inteligencia artificial.</p>
+                            <a href="https://es.wikipedia.org/wiki/Alan_Turing" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Jane+Goodall" class="card-img-top" alt="Jane Goodall">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Goodall</h5>
+                            <p class="card-text">Estudiosa de los chimpancés y defensora del medio ambiente.</p>
+                            <a href="https://es.wikipedia.org/wiki/Jane_Goodall" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card article-card">
+                        <img src="https://via.placeholder.com/350x200?text=Stephen+Hawking" class="card-img-top" alt="Stephen Hawking">
+                        <div class="card-body">
+                            <h5 class="card-title">Stephen Hawking</h5>
+                            <p class="card-text">Teórico físico y cosmólogo, conocido por su trabajo sobre los agujeros negros.</p>
+                            <a href="https://es.wikipedia.org/wiki/Stephen_Hawking" class="btn btn-primary" target="_blank">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dialectica Educativa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

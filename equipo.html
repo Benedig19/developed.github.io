@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Dialectica Educativa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: #f8f9fa;
+        }
+        .team-member {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .team-member h4 {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .team-member p {
+            color: #777;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 0;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .jumbotron p {
+            font-size: 1.2rem;
+        }
+        .jumbotron .btn {
+            background-color: #f8f9fa;
+            color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .jumbotron .btn:hover {
+            background-color: #f1f1f1;
+        }
+        @media (max-width: 768px) {
+            .jumbotron h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Dialectica Educativa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">Acerca de</a> <!-- Asegúrate de usar el enlace correcto -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a> <!-- Cambié el enlace a "contacto.html" -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1>Conoce a Nuestro Equipo</h1>
+        <p>Estamos dedicados a la educación y el pensamiento crítico, apoyados por un equipo de expertos comprometidos.</p>
+    </div>
+
+    <!-- Equipo -->
+    <section id="equipo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestro Equipo</h2>
+            <div class="row g-4">
+                <!-- Director -->
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Director" class="rounded-circle mb-3">
+                        <h4>Dr. Juan Pérez</h4>
+                        <p>Director Ejecutivo</p>
+                    </div>
+                </div>
+                <!-- Subdirector -->
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Subdirector" class="rounded-circle mb-3">
+                        <h4>Lic. Ana Gómez</h4>
+                        <p>Subdirectora</p>
+                    </div>
+                </div>
+                <!-- Miembro del Equipo -->
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Miembro" class="rounded-circle mb-3">
+                        <h4>Dr. Luis Martínez</h4>
+                        <p>Investigador Principal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dialectica Educativa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
